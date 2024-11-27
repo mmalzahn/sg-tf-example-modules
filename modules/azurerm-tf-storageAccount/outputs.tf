@@ -4,6 +4,7 @@
 
 output "outputresource" {
   value = azurerm_storage_account.sa_main
+  sensitive = true
 }
 
 ## Example:
