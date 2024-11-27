@@ -1,6 +1,7 @@
 /**
 * Provider and Versions
 *   - AzureRM >= 4.9.0
+*   - Random >= 3.6.3
 **/
 
 terraform {
@@ -11,7 +12,7 @@ terraform {
     }
     random = {
       source  = "hashicorp/random"
-      version = "3.6.3"
+      version = ">= 3.6.3"
     }
   }
 }
