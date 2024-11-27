@@ -3,15 +3,29 @@
 ###############
 
 variable "rgname" {
-  type = string
-  sensitive = false
+  type        = string
+  sensitive   = false
   description = "Name of resource group to deploy the resource to"
 }
 
 variable "region" {
-    description = "Region to deploy the resources to"
-    nullable = false
-    default = "northeurope"
+  description = "Region to deploy the resources to"
+  nullable    = false
+  default     = "northeurope"
+  type        = string
+}
+
+variable "https-traffic-only-enabled" {
+  description = "HTTPS traffic only"
+  default     = true
+  type        = bool
+  nullable    = false
+}
+
+variable "app-name" {
+  description = "application basename"
+  nullable = false
+  sensitive = false
   type = string
 }
 
