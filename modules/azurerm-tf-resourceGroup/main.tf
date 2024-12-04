@@ -7,5 +7,5 @@
 
 resource "azurerm_resource_group" "test_rg" {
   location = var.region
-  name = "rg-${var.app-name}"
+  name = "rg-${var.appname}"
 }

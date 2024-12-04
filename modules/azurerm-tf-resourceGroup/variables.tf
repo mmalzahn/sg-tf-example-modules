@@ -2,12 +2,12 @@
 ## Variables ##
 ###############
 
-variable "app-name" {
+variable "appname" {
   type = string
   sensitive = false
   description = "Name of the Application"
   validation {
-    condition = length(var.app-name) > 2 && length(var.app-name) <= 8
+    condition = length(var.appname) > 2 && length(var.appname) <= 8
     error_message = "The Applicationname has to be between 3-8 characters in length"
   }
 }
